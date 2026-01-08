@@ -5,8 +5,8 @@ import (
 	"encoding/json"
 	"fmt"
 
-	"github.com/usace-cloud-compute/cc-go-sdk"
-	. "github.com/usace-cloud-compute/seed-generator/internal/compute"
+	"github.com/fema-ffrd/cc-go-sdk"
+	. "github.com/fema-ffrd/seed-generator-plugin/internal/compute"
 )
 
 const (

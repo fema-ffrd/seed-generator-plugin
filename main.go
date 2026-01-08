@@ -3,9 +3,9 @@ package main
 import (
 	"log"
 
-	"github.com/usace-cloud-compute/cc-go-sdk"
-	tiledb "github.com/usace-cloud-compute/cc-go-sdk/tiledb-store"
-	_ "github.com/usace-cloud-compute/seed-generator/internal/actions"
+	"github.com/fema-ffrd/cc-go-sdk"
+	tiledb "github.com/fema-ffrd/cc-go-sdk/tiledb-store"
+	_ "github.com/fema-ffrd/seed-generator-plugin/internal/actions"
 )
 
 var commit string
