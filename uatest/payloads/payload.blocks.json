@@ -1,0 +1,40 @@
+{
+    "attributes": {},
+    "stores": [
+        {
+            "name": "FSB",
+            "store_type": "FS",
+            "params": { "root": "/mnt" }
+        }
+    ],
+    "inputs": [],
+    "outputs": [
+        {
+            "name": "blocks.json",
+            "paths": { "default": "blocks.json" },
+            "store_name": "FSB"
+        }
+    ],
+    "actions": [
+        {
+            "name": "block-generation-fixed-length",
+            "type": "block-generation-fixed-length",
+            "description": "generating blocks",
+            "attributes": {
+                "target_total_events": 50,
+                "blocks_per_realization": 5,
+                "target_events_per_block": 2,
+                "seed": 4321,
+                "outputdataset_name": "blocks.json",
+                "store_type": "json"
+            },
+            "outputs": [
+                {
+                    "name": "blocks.json",
+                    "paths": { "default": "blocks.json" },
+                    "store_name": "FSB"
+                }
+            ]
+        }
+    ]
+}
